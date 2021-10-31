@@ -1,4 +1,4 @@
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+): `Note: Please Execute SQL DDL in the MySQL Server from root user Before You Access the Application`
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+): `Note: Please Execute SQL DDL in the MySQL Server from root user Before You Access the Application - (web_dev_project.sql)`
 # WEB DEVELOPMENT ASSIGNMENT
 <b>To-Do and Blogger Web Application (Assigned By Sir Dr. Gulsher Laghari)</b><br/>
 ![alt text](https://github.com/saleem3864/web_dev_assignment/blob/master/Images/gif_image.gif)
@@ -30,4 +30,5 @@
 # PERTICULARS:
 ## 2K18/CSM/72
 ## Muhammad Saleem
+## [saleembozdar1@gmail.com](mailto:saleembozdar1@gmail.com)
 ## BCS; P - IV; Sems. 8
