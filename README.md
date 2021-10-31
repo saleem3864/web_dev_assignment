@@ -18,6 +18,7 @@
   * Switch to To-Do
   * Signout
    ![alt text](https://github.com/saleem3864/web_dev_assignment/blob/master/Images/publish_blog.png)
+   ![alt text](https://github.com/saleem3864/web_dev_assignment/blob/master/Images/blog_spot.png)
 ### Technologies:
   1. HTML 5
   2. CSS 3
