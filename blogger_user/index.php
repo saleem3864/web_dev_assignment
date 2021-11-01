@@ -24,8 +24,8 @@ if(!isset($_SESSION['USER'])){
         <h1 class="w3-center">Blogger Application</h1>
         <div class="w3-center" id="timer">Loading...</div>
         <footer class="w3-container w3-margin" style="text-align: right;" id="login-footer">
-          <button class="w3-button w3-round w3-teal model-button" id="update-button" type="button" onclick="document.location.replace('../to_do_user')"><i class="fa fa-rss"></i> <span class='w3-wide'> Switch to To-Do.</span> <i id="loader-update" style="text-align: right; display: none" class=" w3-margin-left fa fa-spinner fa-pulse"></i></button>
-          <button class="w3-button w3-round w3-red model-button" id="update-button" type="button" onclick="sign_out()"><i class="fa fa-sign-out"></i> <span class='w3-wide'> Signout.</span> <i id="loader-update" style="text-align: right; display: none" class=" w3-margin-left fa fa-spinner fa-pulse"></i></button>    
+          <button class="w3-button w3-round w3-teal model-button"  type="button" onclick="document.location.replace('../to_do_user')"><i class="fa fa-rss"></i> <span class='w3-wide'> Switch to To-Do.</span> <i id="loader-update" style="text-align: right; display: none" class=" w3-margin-left fa fa-spinner fa-pulse"></i></button>
+          <button class="w3-button w3-round w3-red model-button" type="button" onclick="sign_out()"><i class="fa fa-sign-out"></i> <span class='w3-wide'> Signout.</span> <i id="loader-update" style="text-align: right; display: none" class=" w3-margin-left fa fa-spinner fa-pulse"></i></button>    
       </footer>
             <div class="w3-container w3-round">
                 <div style="width: 100%; margin-left: 0%; margin-right: 2%;" class="w3-card">
