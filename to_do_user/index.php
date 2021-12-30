@@ -10,7 +10,6 @@ if(!isset($_SESSION['USER'])){
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do Application</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -64,8 +63,8 @@ if(!isset($_SESSION['USER'])){
       <label for="task-details" class="w3-text-blue"> Task Details:</label>
       <textarea id="task-details" class="w3-input w3-border w3-round w3-hover-border-green w3-focus-border-green" name="body-email" type="text" placeholder="Write Details Of Task. (1000 Characters Max)" style="height: 100px;"></textarea>
       </div>
-    <footer class="w3-container w3-margin" style="text-align: center;">
-    <button class="w3-button w3-round w3-green model-button" id="proceed-button" type="button" onclick='create_task();'><i class="fa fa-check"></i> <span class='w3-wide'> Done.</span> <i id="loader-done" style="text-align: right; display: none" class=" w3-margin-left fa fa-spinner fa-pulse"></i></button>
+    <footer class="w3-container" style="text-align: center;">
+    <button class="w3-button w3-round w3-green w3-margin" id="proceed-button" type="button" onclick='create_task();'><i class="fa fa-check"></i> <span class='w3-wide'> Done.</span> <i id="loader-done" style="text-align: right; display: none" class=" w3-margin-left fa fa-spinner fa-pulse"></i></button>
     </footer>
   </div>
 </div>
@@ -77,15 +76,15 @@ if(!isset($_SESSION['USER'])){
     <header class="w3-container w3-teal"> 
       <span onclick="document.getElementById('update-model').style.display='none'" 
       class="w3-button w3-display-topright"><i class="fa fa-times"></i></span>
-      <h2 style="text-align: center;">New Task.</h2>
+      <h2 style="text-align: center;">Update a Task.</h2>
     </header>
     <div class="w3-container" id="reply-header">
       <p id="update-error">Update Task Task</p>
       <label for="update-details" class="w3-text-blue"> Update Task Details:</label>
       <textarea id="update-details" class="w3-input w3-border w3-round w3-hover-border-green w3-focus-border-green" name="body-email" type="text" placeholder="Write Details Of Task. (1000 Characters Max)" style="height: 100px;"></textarea>
       </div>
-      <footer class="w3-container w3-margin" style="text-align: center;">
-    <button class="w3-button w3-round w3-green model-button" id="update-button" type="button" onclick=''><i class="fa fa-check"></i> <span class='w3-wide'> Update.</span> <i id="loader-update" style="text-align: right; display: none" class=" w3-margin-left fa fa-spinner fa-pulse"></i></button>
+      <footer class="w3-container" style="text-align: center;">
+    <button class="w3-button w3-round w3-green w3-margin" id="update-button" type="button" onclick=''><i class="fa fa-check"></i> <span class='w3-wide'> Update.</span> <i id="loader-update" style="text-align: right; display: none" class=" w3-margin-left fa fa-spinner fa-pulse"></i></button>
     </footer>
   </div>
 </div>

@@ -13,9 +13,9 @@ if (isset($_SESSION['USER'])) {
                 echo "<table class='w3-table w3-striped w3-hoverable w3-border'>
                 <tr class='w3-grey w3-hover-grey'>
                     <th style='width: 5%;'>Sr.</th>
-                    <th style='width: 55%;''>Task Details</th>
+                    <th style='width: 50%;''>Task Details</th>
                     <th style='width: 10%;'>Created On</th>
-                    <th style='width: 10%; vertical-align: middle;'>Actions</th>
+                    <th style='width: 15%; vertical-align: middle;'>Actions</th>
                 </tr>";
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr>

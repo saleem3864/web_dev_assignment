@@ -8,12 +8,12 @@ if($connection->connect_error){
 }
 
 else{
-    if ($connection->query("INSERT INTO blogs (title,content,publisher) VALUES('{$_POST['title']}','{$_POST['content']}','{$_SESSION['USER']}');")) {
-        echo "<h3 class='w3-text-green' style='text-align: center;'>Blog Published!</h3>";
-        sleep(1);
+    $query = ($_POST['blog_id'] == 'NONE') ? "INSERT INTO blogs (title,content,publisher,is_public) VALUES('{$_POST['title']}','{$_POST['content']}','{$_SESSION['USER']}','{$_POST['publish']}');" : "UPDATE blogs SET title = '{$_POST['title']}', content = '{$_POST['content']}',is_public = '{$_POST['publish']}' WHERE blog_id = {$_POST['blog_id']};";
+    if ($connection->query($query)) {
+        echo ($_POST['publish'] == 'YES') ? "<h3 class='w3-text-green' style='text-align: center;'>Blog Published!</h3>": (($_POST['blog_id'] == 'NONE') ? $connection->insert_id: $_POST['blog_id']);
     }
     else {
-        sleep(1);
+        echo $query;
         echo "<h3 class='w3-text-red' style='text-align: center;'>Something Went Wrong!</h3>";
 
     }

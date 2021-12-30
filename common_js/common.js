@@ -30,9 +30,39 @@ function timer(){
     setTimeout(timer,1000);
     }
 
+    function install(){
+        $(document).ready(function(){
+            $('#loader-install').css({display:'inline-block'});
+            $('#install-button span').text('Installing...');
+            $('#install-button').addClass('w3-disabled');
+            //$('#login-footer').css({display:'none'});
+            //$('#login-error').html("<h4 class='w3-text-deep-purple' style='text-align: center;'>Installing... <i class='fa fa-spinner fa-pulse'></i></h4>");
+            $.ajax({
+                url : "./common_php/install.php",
+                type : "POST",
+                data:{},
+                success : function(data){
+                    console.log(data);
+                    if(data == 'INSTALLED'){
+                        $('#loader-install').css({display:'none'});
+                        $('#install-button span').text('DB INSTALLED!');
+                    }
+                    else{
+                        $('#loader-install').css({display:'none'});
+                        $('#install-button span').text('DB Installation Failed. RETRY!');
+                        $('#install-button').removeClass('w3-disabled');
+                    }
+                    
+
+                }
+                
+        });
+    });
+    }
 
     function sign_in(first_app){
         $(document).ready(function(){
+            if($('#email').val() != '' && $('#password').val() != ''){
             $('#login-footer').css({display:'none'});
             $('#login-error').html("<h4 class='w3-text-deep-purple' style='text-align: center;'>Logging In, Please Wait... <i class='fa fa-spinner fa-pulse'></i></h4>");
             $.ajax({
@@ -47,11 +77,10 @@ function timer(){
                     else{
                         document.location.reload();
                     }
-                    
-
                 }
                 
         });
+    }
     });
     }
 

@@ -19,15 +19,19 @@ if ($result = $connection->query("SELECT password FROM users WHERE email = '{$_P
                 
         } 
         else {
-            if ($connection->query("INSERT INTO users (email,name,password) VALUES('{$_POST['email']}','{$_POST['name']}','".password_hash($_POST['password'],PASSWORD_BCRYPT)."');")) {
-                session_start();
-                $_SESSION['USER'] = $_POST['email'];
-                echo "PASSED IT!";
+            if ($_POST['name'] != "") {
+                if ($connection->query("INSERT INTO users (email,name,password) VALUES('{$_POST['email']}','{$_POST['name']}','".password_hash($_POST['password'], PASSWORD_BCRYPT)."');")) {
+                    session_start();
+                    $_SESSION['USER'] = $_POST['email'];
+                    echo "PASSED IT!";
+                } else {
+                    echo 'failed';
+                }
             }
-            else {
+            else{
                 echo 'failed';
             }
-            }
+        }
     } 
     else {
         echo "<h3 class='w3-text-red' style='text-align: center;'>Something Went Wrong!</h3>";
