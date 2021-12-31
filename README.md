@@ -2,7 +2,7 @@
 # WEB DEVELOPMENT ASSIGNMENT
 <b>To-Do and Blogger Web Application (Assigned By Sir Dr. Gulsher Laghari)</b><br/>
 L I V E   A T:
-# [bit.ly/2k18_csm_72_web_dev](bit.ly/2k18_csm_72_web_dev)
+# [bit.ly/2k18_csm_72_web_dev](http://bit.ly/2k18_csm_72_web_dev)
 ![alt text](https://github.com/saleem3864/web_dev_assignment/blob/master/Images/gif_image.gif)
 ## To-Do:
  * Sign In
